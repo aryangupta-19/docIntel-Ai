@@ -1,0 +1,22 @@
+# Environment / secrets
+.env
+backend/.env
+
+# Python virtual environment
+venv/
+backend/venv/
+
+# Python cache
+__pycache__/
+backend/**/__pycache__/
+*.pyc
+
+# Vector database
+backend/chroma_db/
+
+# Generated files
+backend/outputs/
+
+# Frontend dependencies/build
+frontend/node_modules/
+frontend/dist/
