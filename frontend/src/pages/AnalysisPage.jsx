@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { RadarChart, Radar, PolarGrid, PolarAngleAxis, ResponsiveContainer, Tooltip } from "recharts";
+import { API_BASE_URL } from "../api";
 
 export default function ResultsPage({ result, onBack }) {
   const [tab, setTab] = useState("simple");
@@ -72,7 +73,7 @@ export default function ResultsPage({ result, onBack }) {
           </span>
         </div>
         <div style={{ display: "flex", gap: "0.5rem" }}>
-          <a href={`http://localhost:8000/download/${result.annotated_filename}`}
+          <a href={`${API_BASE_URL}/download/${result.annotated_filename}`}
             target="_blank" rel="noreferrer"
             style={{ padding: "0.5rem 1rem", background: "#1a1a2e", color: "white",
               borderRadius: "6px", textDecoration: "none", fontSize: "0.85rem", fontWeight: "600" }}>

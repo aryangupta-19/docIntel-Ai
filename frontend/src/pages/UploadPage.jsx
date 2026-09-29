@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { API_BASE_URL } from "../api";
 
 export default function UploadPage({ onResult, onBack }) {
   const [file, setFile] = useState(null);
@@ -37,7 +38,7 @@ export default function UploadPage({ onResult, onBack }) {
       form.append("file", file);
       form.append("project_type", projectType);
       form.append("city_tier", cityTier);
-      const res = await axios.post("http://localhost:8000/analyze-and-annotate", form);
+      const res = await axios.post(`${API_BASE_URL}/analyze-and-annotate`, form);
       clearInterval(interval);
       onResult(res.data);
     } catch (err) {

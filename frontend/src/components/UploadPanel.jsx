@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { API_BASE_URL } from "../api";
 
 function UploadPanel({ setResult, setLoading, setError }) {
   const [file, setFile] = useState(null);
@@ -21,7 +22,7 @@ function UploadPanel({ setResult, setLoading, setError }) {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/analyze",
+        `${API_BASE_URL}/analyze`,
         formData
       );
 
