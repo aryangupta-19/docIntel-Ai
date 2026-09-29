@@ -9,10 +9,5 @@ sentence-transformers
 pypdf
 python-multipart
 groq
-python-dotenv
-uvicorn
-fastapi
-python-multipart
 pymupdf
 pytesseract
-

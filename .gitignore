@@ -1,22 +1,40 @@
 # Environment / secrets
 .env
+.env.*
+!.env.example
+*.env
 backend/.env
+frontend/.env
 
 # Python virtual environment
 venv/
+.venv/
 backend/venv/
 
 # Python cache
 __pycache__/
 backend/**/__pycache__/
 *.pyc
+*.pyo
 
 # Vector database
 backend/chroma_db/
+chroma_db/
 
-# Generated files
+# Uploads & Generated files
+backend/uploads/
 backend/outputs/
+uploads/
+outputs/
 
 # Frontend dependencies/build
 frontend/node_modules/
 frontend/dist/
+
+# System / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Other projects
+OpRail/

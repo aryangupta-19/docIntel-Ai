@@ -1,0 +1,11 @@
+services:
+  # DocIntel Backend Service
+  - type: web
+    name: docintel-backend
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: Dockerfile
+    plan: free
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
