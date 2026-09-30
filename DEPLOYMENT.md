@@ -1,4 +1,4 @@
-# 🚀 DocIntel AI Deployment Guide
+# DocIntel AI Deployment Guide
 
 This guide walks you through deploying **DocIntel AI** using the production-recommended split deployment:
 - **Backend (FastAPI + Groq + ChromaDB + PyMuPDF)**: Deployed on **Render** (or **Railway**)
@@ -6,7 +6,7 @@ This guide walks you through deploying **DocIntel AI** using the production-reco
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 1. **GitHub Account**: Your code pushed to a GitHub repository.
 2. **Groq Cloud API Key**: Free API key from [Groq Console](https://console.groq.com/keys).
 3. **Render Account**: Free account at [render.com](https://render.com) (or [railway.com](https://railway.com)).
